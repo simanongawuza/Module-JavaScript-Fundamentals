@@ -13,15 +13,52 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- 1. Customer's Name -->
+        <div>
+          <label for="name">Customer Name:</label>
+          <input type="text" id="name" name="name" required pattern=".*\S.*\S.*" title="Name must contain at least two characters.">
+        </div>
+
+        <!-- 2. Customer's Email -->
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- 3. T-Shirt Colour -->
+        <div>
+          <label for="colour">Choose a Colour:</label>
+          <select id="colour" name="colour" required>
+            <option value="">--Please choose a colour--</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+
+        <!-- 4. T-Shirt Size -->
+        <div>
+          <label for="size">Choose a Size:</label>
+          <select id="size" name="size" required>
+            <option value="">--Please choose a size--</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="Xl">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit">Submit Order</button>
+        </div>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <!-- Replace 'YOUR NAME' below with your real name -->
+      <p>By YOUR NAME</p>
     </footer>
   </body>
 </html>
