@@ -1,0 +1,1 @@
+console.log("I'm learning how to code because I want to combine my engineering background with technology.")
