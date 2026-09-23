@@ -9,9 +9,10 @@
 
 // 2 Multiple outcomes
 const password = "secretword123";
-const userInput = "thisiswrong";
+const userInput = "secretword123";
 const adminPassword = "override";
-const response = "";
+//Changed the const to let so that the response variable can be changed
+let response = "";
 
 if (userInput === password){ 
   response = "Correct password entered";
