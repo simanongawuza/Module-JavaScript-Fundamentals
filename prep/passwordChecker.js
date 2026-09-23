@@ -9,13 +9,16 @@
 
 // 2 Multiple outcomes
 const password = "secretword123";
-const userInput = "override";
+const userInput = "thisiswrong";
 const adminPassword = "override";
+const response = "";
 
-if (userInput === password){
-  console.log("Correct password entered");
+if (userInput === password){ 
+  response = "Correct password entered";
 } else if (userInput === adminPassword){
-    console.log("Admin access granted")
-}else {
-  console.log("Incorrect password!");
+  response = "Admin access granted";
+} else {
+  response = "Incorrect password!";
 }
+
+console.log(response);
